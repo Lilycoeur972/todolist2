@@ -3,7 +3,7 @@
 
     <?php
     // Vérification de $_GET["mod"]
-
+    
     if (isset($_GET["mod"])){
 
         switch ($_GET["mod"]) {
@@ -16,6 +16,13 @@
               
               
                 break;
+                case "actu":
+                    include($dir_fs."/pages/actu.php") ;
+    
+              
+              
+                break;
+
                 default:
                 case "accueil":
                     include($dir_fs."/pages/accueil.php") ;
